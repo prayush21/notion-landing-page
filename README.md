@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Goals:
+
+- Deploy project in 3 days.
+- Incorporate use of RSC.
+
 ## Getting Started
 
 First, run the development server:
