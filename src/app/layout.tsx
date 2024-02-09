@@ -22,7 +22,9 @@ export default function RootLayout({
         <Banner />
         <Navbar />
         {children}
-        <Footer />
+        <div className="w-full">
+          <Footer />
+        </div>
       </body>
     </html>
   );
