@@ -1,5 +1,4 @@
 import React from "react";
-import LogoWithName from "./LogoWithName";
 import Socials from "./Socials";
 import LanguageMenu from "./LanguageMenu";
 import Image from "next/image";
@@ -99,31 +98,6 @@ function Footer() {
         {FooterColumnData.map(({ title, list }, index) => {
           return <FooterColumnList key={index} title={title} list={list} />;
         })}
-        {/* <FooterColumnList
-          title="Product"
-          list={["AI", "Docs", "Wikis", "Projects", "Calendar", "What’s new"]}
-        />
-        <FooterColumnList
-          title="Solutions"
-          list={[
-            "Enterprise",
-            "Small business",
-            "Personal use",
-            "Remote work",
-            "Startups",
-            "Education",
-            "Nonprofits",
-            "Engineering",
-            "Product",
-            "Design",
-            "Managers",
-          ]}
-        />
-        <FooterColumnList
-          title="Download"
-          list={["iOS & Android", "Mac & Windows", "Calendar", "Web Clipper"]}
-        /> */}
-        {/* </div> */}
       </div>
     </nav>
   );
