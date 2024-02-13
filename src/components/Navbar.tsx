@@ -94,7 +94,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-full bg-white sticky top-0 border-b-2 border-neutral-200">
+    <div className="w-full bg-white sticky top-0 border-b-2 border-neutral-200 z-50">
       <nav className="p-4 flex justify-between ">
         <div className="flex flex-row space-x-3">
           <Image width={92} height={32} src={NotionLogo} alt="notion-logo" />

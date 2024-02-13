@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.carousel-parent > button:nth-child(3){
+    position: absolute;
+    left: 3em;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.carousel-parent > button:nth-child(4){
+    position: absolute;
+    right: 3em;
+    top: 60%;
+    transform: translateY(-50%);
+}
