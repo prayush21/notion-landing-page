@@ -56,13 +56,10 @@ function Products() {
   const [selectedImage, setSelectedImage] = React.useState<number>(0);
   const [api, setApi] = React.useState<CarouselApi>();
 
-  console.log("selected", selectedImage);
-
   React.useEffect(() => {
     if (!api) return;
     setSelectedImage(api.selectedScrollSnap());
     api?.on("select", () => {
-      console.log("e", api.selectedScrollSnap());
       setSelectedImage(api.selectedScrollSnap());
     });
   }, [api]);
@@ -109,7 +106,7 @@ function Products() {
           <CarouselContent>
             {ProductsArray.map(({ imgSrc, key }) => {
               return (
-                <CarouselItem key={key}>
+                <CarouselItem key={key} className="shadow-md rounded-xl">
                   <AspectRatio ratio={16 / 10}>
                     <Image
                       src={imgSrc}
