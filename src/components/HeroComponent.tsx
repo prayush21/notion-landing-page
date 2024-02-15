@@ -5,7 +5,7 @@ import Image from "next/image";
 import HeroImage from "../../public/home-hero.webp";
 function HeroComponent() {
   return (
-    <div className="flex flex-col space-y-7 place-items-center">
+    <div className="flex flex-col space-y-7 place-items-center max-sm:mt-10">
       <div className="text-5xl sm:text-6xl font-bold text-center min-w-80 leading-14 max-w-xl">
         Write, plan, share. With AI at your side.
       </div>

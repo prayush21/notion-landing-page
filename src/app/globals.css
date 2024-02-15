@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.carousel-parent > button:nth-child(3){
+/* .carousel-parent > button:nth-child(3){
     position: absolute;
     left: 3em;
     top: 60%;
@@ -15,4 +15,4 @@
     right: 3em;
     top: 60%;
     transform: translateY(-50%);
-}
+} */

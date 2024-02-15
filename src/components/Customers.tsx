@@ -36,7 +36,9 @@ function Customers() {
   ];
   return (
     <div className="flex flex-col justify-center place-items-center mt-40 w-full space-y-4">
-      <div className="text-5xl font-bold">Millions run on Notion every day</div>
+      <div className="text-4xl font-semibold sm:text-5xl sm:font-bold text-center">
+        Millions run on Notion every day
+      </div>
       <div className=" text-base font-light max-w-lg text-center">
         Powering the world’s best teams, from next-generation startups to
         established enterprises.
@@ -48,7 +50,7 @@ function Customers() {
         Read Customer Stories <ArrowRight />
       </Link>
 
-      <div className="flex flex-row items-center flex-wrap max-[820px]: gap-5 justify-center w-100 mt-8">
+      <div className="flex flex-row items-center flex-wrap gap-5 justify-center w-100 mt-8">
         {logos.map((srcImg, index) => {
           return (
             <Image

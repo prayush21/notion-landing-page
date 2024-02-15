@@ -69,8 +69,23 @@ function Products() {
   }
 
   return (
-    <div>
-      <div className="flex flex-col justify-between rounded-xl">
+    <div className="w-full">
+      <div className="flex overflow-x-auto rounded-xl max-w-full sm:flex gap-2 sm:gap-4">
+        {ProductsArray.map(({ key, color, desc }, index) => {
+          return (
+            <ProductListItem
+              selected={selectedImage}
+              onMouseEnter={() => handleMouseEnter(index)}
+              index={index}
+              key={key}
+              title={key}
+              color={color}
+              desc={desc}
+            />
+          );
+        })}
+      </div>
+      <div className="flex flex-col justify-between rounded-xl max-w-full">
         <Carousel
           opts={{
             skipSnaps: true,
@@ -85,25 +100,9 @@ function Products() {
             }),
           ]}
           setApi={setApi}
-          className="carousel-parent min-w-lg p-4"
+          className="p-4"
         >
-          <div className="tab-list grid grid-cols-5 justify-items-stretch bg-transparent gap-4 p-4 rounded-xl">
-            {ProductsArray.map(({ key, color, desc }, index) => {
-              return (
-                <ProductListItem
-                  selected={selectedImage}
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  index={index}
-                  key={key}
-                  title={key}
-                  color={color}
-                  desc={desc}
-                />
-              );
-            })}
-          </div>
-
-          <CarouselContent>
+          <CarouselContent className="">
             {ProductsArray.map(({ imgSrc, key }) => {
               return (
                 <CarouselItem key={key} className="shadow-md rounded-xl">
