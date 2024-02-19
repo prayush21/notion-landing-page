@@ -2,6 +2,7 @@ import BuildingBlocks from "@/components/BuildingBlocks";
 import Customers from "@/components/Customers";
 import HeroComponent from "@/components/HeroComponent";
 import Products from "@/components/Products";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Products />
       <Customers />
       <BuildingBlocks />
+      <Testimonial />
     </main>
   );
 }
