@@ -48,8 +48,14 @@ function BuildingBlocks() {
               Create your own labels, tags, owners, and more, so everyone has
               context and everything stays organized.
             </div>
-            <div className="flex justify-end">
-              <Image src={CustomizeInfo} alt="customize-info" />
+            <div className=" grow flex flex-col justify-end place-items-end">
+              <Image
+                width={976}
+                height={758}
+                src={CustomizeInfo}
+                alt="customize-info"
+                className=" -mr-5 -mb-5 rounded-xl"
+              />
             </div>
           </div>
           <div className="flex flex-col bg-neutral-100 rounded-xl p-6 justify-between gap-2">
@@ -67,8 +73,14 @@ function BuildingBlocks() {
               Everything is drag and drop in Notion — images, toggles, to-do’s,
               even embedded databases.
             </div>
-            <div className="flex justify-end">
-              <Image src={BuildAnyPage} alt="build-info" />
+            <div className=" grow flex flex-col justify-end place-items-end">
+              <Image
+                width={976}
+                height={758}
+                src={BuildAnyPage}
+                alt="build-info"
+                className=" -mr-5 -mb-5 rounded-xl"
+              />
             </div>
           </div>
         </div>

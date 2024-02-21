@@ -79,7 +79,7 @@ function ViewCarousel() {
           )}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 max-sm:max-w-72 max-w-96 hover">
+        <div className="flex flex-wrap justify-center gap-2 max-sm:max-w-72 max-w-96 ">
           {" "}
           <Button
             onClick={() => setActive("board")}

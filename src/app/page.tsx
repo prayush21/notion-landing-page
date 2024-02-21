@@ -1,5 +1,8 @@
 import BuildingBlocks from "@/components/BuildingBlocks";
+import Community from "@/components/Community";
+import CommunityBento from "@/components/CommunityBento";
 import Customers from "@/components/Customers";
+import EveryTeams from "@/components/EveryTeams";
 import HeroComponent from "@/components/HeroComponent";
 import Products from "@/components/Products";
 import Testimonial from "@/components/Testimonial";
@@ -12,6 +15,9 @@ export default function Home() {
       <Customers />
       <BuildingBlocks />
       <Testimonial />
+      <EveryTeams />
+      <Community />
+      <CommunityBento />
     </main>
   );
 }
