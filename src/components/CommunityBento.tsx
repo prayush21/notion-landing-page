@@ -6,7 +6,6 @@ import WelcomeLangImages from "../../public/welcome-to-notion.webp";
 import AndreAv from "../../public/twitter-avatar-andre.png";
 import OliverAv from "../../public/twitter-avatar-oliver.png";
 import DebAv from "../../public/twitter-avatar-deborah.avif";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Carousel } from "./ui/carousel";
 import BentoCarousel from "./BentoCarousel";
 
@@ -71,7 +70,9 @@ function CommunityBento() {
         </div>
       </div>
       <div className="flex flex-col col-span-full rounded-lg sm:col-span-8 bg-neutral-100 p-5">
-        <BentoCarousel />
+        <div className="flex flex-col gap-2 row-span-4 rounded-lg sm:col-span-2 bg-neutral-100">
+          <BentoCarousel />
+        </div>
       </div>
       <div className="flex flex-col col-span-full rounded-lg sm:col-span-4 gap-6">
         <div className="flex flex-col gap-2 row-span-4 rounded-lg sm:col-span-4 bg-neutral-100 p-5">

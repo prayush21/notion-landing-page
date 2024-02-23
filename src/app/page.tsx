@@ -4,7 +4,9 @@ import CommunityBento from "@/components/CommunityBento";
 import Customers from "@/components/Customers";
 import EveryTeams from "@/components/EveryTeams";
 import HeroComponent from "@/components/HeroComponent";
+import LastHero from "@/components/LastHero";
 import Products from "@/components/Products";
+import TemplatesBento from "@/components/TemplatesBento";
 import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
@@ -18,6 +20,8 @@ export default function Home() {
       <EveryTeams />
       <Community />
       <CommunityBento />
+      <TemplatesBento />
+      <LastHero />
     </main>
   );
 }
