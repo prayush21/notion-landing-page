@@ -64,7 +64,7 @@ function Products() {
     });
   }, [api]);
 
-  function handleMouseEnter(index) {
+  function handleMouseEnter(index: number) {
     api?.scrollTo(index);
   }
 
@@ -89,7 +89,7 @@ function Products() {
         <Carousel
           opts={{
             skipSnaps: true,
-            slides: false,
+            slides: null,
             loop: true,
           }}
           plugins={[

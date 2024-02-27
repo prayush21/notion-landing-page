@@ -232,7 +232,11 @@ function Navbar() {
       </nav>
       {isMenuOpen && (
         <div className="md:hidden w-full p-4 border-t-2">
-          <Accordion type="multiple" className="w-full" defaultValue="product">
+          <Accordion
+            type="multiple"
+            className="w-full"
+            defaultValue={["product"]}
+          >
             <AccordionItem value="product">
               <AccordionTrigger className="text-lg font-bold">
                 Product
@@ -273,9 +277,7 @@ function Navbar() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <Button variant="" className="w-full mb-2">
-            Get Notion Free
-          </Button>
+          <Button className="w-full mb-2">Get Notion Free</Button>
           <Button variant="outline" className="w-full">
             Log in
           </Button>

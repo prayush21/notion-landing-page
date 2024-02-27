@@ -4,7 +4,14 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import SparklesIcon from "../../public/sparkles2.svg";
 
-export default function ProductListItem(props) {
+export default function ProductListItem(props: {
+  selected: number;
+  title: string;
+  desc: string;
+  color: string;
+  index: number;
+  onMouseEnter: () => void;
+}) {
   return (
     <div
       className={clsx(
